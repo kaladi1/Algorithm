@@ -1,11 +1,14 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        System.out.println("1");
-        System.out.println("0");
+        String input = br.readLine();
+
+        bw.write("1\n0");
+
+        bw.close();
     }
 }
